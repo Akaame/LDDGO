@@ -41,7 +41,7 @@ func main() {
 
 	// env parse LD_LIBRARY_PATH
 	env := os.Getenv("LD_LIBRARY_PATH")
-	paths := strings.Split(env, ";")
+	paths := strings.Split(env, ":")
 	searchPath = append(searchPath, paths...)
 	// SO files are searched through LD_LIBRARY_PATH and lib/lib64
 
